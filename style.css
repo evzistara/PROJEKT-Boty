@@ -1,9 +1,15 @@
 /* intuitivnejsi box-sizing */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 }
 
 /*
@@ -21,3 +27,116 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+}
+
+.box {
+  width: 670px;
+  height: 440px;
+  flex-shrink: 0;
+  display: flex;
+  box-shadow: 5px 2px 5px lightgray;
+  border-radius: 10px;
+}
+
+.left,
+.right {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 30px;
+  position: relative;
+}
+.left {
+  background-image: linear-gradient(#06d7c1, #50cc49);
+  border-radius: 10px 0 0 10px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.left .shoe {
+  position: absolute;
+  bottom: 0;
+  left: -80px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.text {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #06d7c1;
+}
+
+button {
+  position: absolute;
+  bottom: 30px;
+  background-color: #f15f42;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.left p {
+  margin-top: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.down {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  text-align: right;
+  color: white;
+}
+
+.big {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.description {
+  color: #959595;
+  margin-bottom: 30px;
+}
+
+li {
+  border: 1px solid white;
+  padding: 5px;
+}
+li:hover {
+  border: 1px solid #f15f42;
+  border-radius: 50%;
+  color: #f15f42;
+}
+
+.place {
+  margin-bottom: 30px;
+}
